@@ -1,0 +1,160 @@
+.portfolio #contentTitre{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.portfolio #contentTitre .titre{
+    color: #1AE6E9;
+}
+
+
+
+
+.portfolio{
+    height: auto;
+    background-color: #20232E;
+    padding: 100px;
+}
+
+    .portfolio .project{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .portfolio .project #box-projet{
+        position: relative;
+        max-width: 350px;
+        min-width: 260px;
+        height: 260px; 
+        margin: 20px;
+        
+    }
+
+    .portfolio .project #box-projet img{
+        max-width: 350px;
+        width: 350px;
+        max-height: 260px;
+        min-height: 260px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 3px rgba(22, 238, 254, 0.9);
+        object-fit: cover;      
+        border-radius: 15px;
+    }
+
+    .portfolio .project #box-projet .description-projet{
+        position:absolute;
+        color: #0b0a0a;
+        text-align: center;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 350px;
+        min-width: 350px;
+        height: 260px;
+        transition: 0.5s ease;
+        border-radius: 15px;
+        opacity: 0.5;
+    }
+
+    .portfolio .project #box-projet .description-projet .cont{
+        margin: 20px 0px 30px 0px;
+    }
+
+
+    .portfolio .project #box-projet .description-projet .titre-projet span{
+        font-size: 25px;
+        color: #17EEFE;
+    }
+  
+    .portfolio .project #box-projet .description-projet .btn-projet button{
+        background-color: #17EEFE;
+        padding: 5px 25px 8px 25px;
+        border-radius: 15px;
+        color: black;
+        border: 0;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0px 5px 20px rgba(22, 238, 254, 0.5);
+        transition: 0.5s ease;
+    }
+    
+ 
+    .portfolio .project #box-projet .description-projet span{
+        opacity: 0;
+    }
+    .portfolio .project #box-projet .description-projet button{
+        opacity: 0;
+    }
+
+
+    .project #box-projet:hover
+    .description-projet{
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .project #box-projet:hover
+    .description-projet span{
+        opacity: 1;
+    }
+
+    .project #box-projet:hover
+    .description-projet button{
+        opacity: 1;
+    }
+
+    /*  ------------ width < 450px -----------*/
+    @media screen and (max-width:450px) {
+        .portfolio .project #box-projet{
+            position: relative;
+            width: 250px;
+            min-width: 250px;
+            height: 200px; 
+            margin: 20px;
+            
+        }
+    
+        .portfolio .project #box-projet img{
+            max-width: 250px;
+            max-height: 250px;
+            min-height: 200px;
+            width: 250px;
+        }
+    
+        .portfolio .project #box-projet .description-projet{
+            width: 250px;
+            min-width: 250px;
+            height: 200px;
+        }
+
+        .portfolio .project #box-projet .description-projet .titre-projet span{
+            font-size: 20px;
+        }
+
+        .portfolio .project #box-projet .description-projet .desc-projet span{
+            font-size: 14px;
+        }
+
+        .portfolio .project #box-projet .description-projet .cont{
+            margin: 10px 0px 10px 0px;
+        }
+        
+        .portfolio .project #box-projet .description-projet .btn-projet button{
+            padding: 5px 20px 5px 20px;
+            font-size: 12px;
+        }
+    }
+
+    /*  ------------ width < 330px -----------*/
+    @media screen and (max-width:330px) {
+        .portfolio #contentTitre{
+            font-size: 20px;
+        }
+    }
+
+
+    
